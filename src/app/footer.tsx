@@ -14,7 +14,7 @@ export default function Footer() {
             <a className="link-hover link">About us</a>
             <a className="link-hover link">Contact</a>
             <a className="link-hover link">Jobs</a>
-            <a className="link-hover link">Press kit</a>
+            <a className="link-hover link">Press & Announcements</a>
           </div>
           <div>
             <span className="footer-title">Legal</span>
