@@ -1,8 +1,14 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
+
 const nextConfig = {
   images: {
-    remotePatterns: [{ hostname: "images.unsplash.com" }, 
-  { hostname: "lh3.googleusercontent.com"}],
+    domains: ['images.unsplash.com', 'lh3.googleusercontent.com'],
+  },
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      config.resolve.fallback.fileSystem = false;
+    }
+    return config;
   },
 };
 
