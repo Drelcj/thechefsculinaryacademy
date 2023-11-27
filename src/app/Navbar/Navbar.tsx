@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/assets/Logo.png";
+//import Logo from "@/assets/Logo.png";
+// const Logo = 'https://res-console.cloudinary.com/dt3czltxx/thumbnails/v1/image/upload/v1698897801/VGhlIENoZWZzIEN1bGluYXJ5IExvZ28=/grid_landscape';
 import { redirect } from "next/navigation";
 import ShoppingCartButton from "./ShoppingCartButton";
 import { getCart  } from "../lib/db/cart";
@@ -27,7 +28,9 @@ export default async function Navbar () {
         <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2">
             <div className="flex-1">
                 <Link href="/" className="btn btn-ghost text-xl normal-case ">
-                    <Image src={Logo} height={40} width={40} alt="Chefs Academy Logo" />
+                    {/*<Image src={Logo} height={40} width={40} alt="Chefs Academy Logo" /> }
+                    <Image src={Logo} height={40} width={40} alt="Chefs Academy Logo" unoptimized />*/}
+
                     The Chefs Academy 
                 </Link>
             </div>
