@@ -31,7 +31,7 @@ export default async function Navbar () {
                     {/*<Image src={Logo} height={40} width={40} alt="Chefs Academy Logo" /> }
                     <Image src={Logo} height={40} width={40} alt="Chefs Academy Logo" unoptimized />*/}
 
-                    The Chefs' Shop 
+                    The Chefs Shop 
                 </Link>
             </div>
             <div className="flex-none gap-2">
