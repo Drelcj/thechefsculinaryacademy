@@ -2,13 +2,16 @@
 
 const nextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'lh3.googleusercontent.com'],
+    remotePatterns: [
+      { hostname: "images.unsplash.com" },
+      { hostname: "lh3.googleusercontent.com" },
+    ],
   },
-  webpack(config, { isServer }) {
-    if (!isServer) {
-      config.resolve.fallback.fileSystem = false;
-    }
-    return config;
+
+  // Add other configurations here...
+  
+  experimental: {
+    webpackBuildWorker: true,
   },
 };
 
